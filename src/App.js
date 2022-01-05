@@ -1,7 +1,7 @@
 import { getVisibleContacts } from './redux/phonebook-selectors';
-import ContactForm from './components/ContactForm';
-import Filter from './components/Filter';
-import ContactList from './components/ContactList';
+import ContactForm from './components/ContactForm/ContactForm';
+import Filter from './components/Filter/Filter';
+import ContactList from './components/ContactList/ContactList';
 import { useSelector } from 'react-redux';
 
 export default function App() {
