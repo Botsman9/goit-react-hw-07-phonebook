@@ -24,11 +24,14 @@ function ContactForm() {
 
     if (namesIsIn.includes(name) || numbersIsIn.includes(number)) {
       alert(`${name}${number} is already in contacts`);
+      return;
     }
 
     if (name === '' || number === '') {
       alert('Enter all data, please');
+      return;
     }
+    onSubmit(name, number);
   };
 
   const handleSubmit = event => {
@@ -38,8 +41,6 @@ function ContactForm() {
     if (contactCheck()) {
       return;
     }
-
-    onSubmit(name, number);
   };
 
   return (

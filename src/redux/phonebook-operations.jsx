@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as actions from './phonebook-actions';
 
-axios.defaults.baseURL = 'http://localhost:4040';
+axios.defaults.baseURL = 'https://61dd3f98f60e8f001766869e.mockapi.io';
 
 export const addContact = (name, number) => dispatch => {
   const contact = {
